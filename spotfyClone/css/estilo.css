@@ -1,6 +1,10 @@
 /* Geral */
-* {margin: 0; padding: 0; box-sizing: border-box;}
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: Corvetica, sans-serif;}
 
+@font-face {
+    font-family: Corvetica;
+    src: url(/spotfyClone/fontes/coolvetica\ condensed\ rg.ttf);
+}
 
 img{
     max-width: 100%;
@@ -9,16 +13,17 @@ img{
 
 ul li{ list-style: none; }
 
-a{ text-decoration: none; color: white; }
+a{ text-decoration: none; color: white;}
 
 
 /* Barra menu superior */
 .barraSuperior {
     background-color: rgba(0, 0, 0, .6);
-    padding: 10px;
+    padding: 15px;
     display: inline-block;
-    
     position: fixed;
+
+    border: red 1px solid;
 }
 
 .logo{
@@ -36,19 +41,106 @@ a{ text-decoration: none; color: white; }
     
 }
 
-.premium, .suporte, .baixar, .perfil {
-    width: 9%;
+.premium, .suporte, .baixar {
+    width: 7%;
     float: left;
     text-align: center;
-    margin-left: 15px;
-    padding: 22px;
+    margin-left: 0px;
+    padding: 16px;
     margin-top: auto;
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 16px;
-    
-    
+    font-size: 19px;
+    letter-spacing: 2px;
 
+}
+
+.barra{
+    width: 2px;
+    float: left;
+    color: white;
+    margin-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 30px;
+    font-size: 18px;
+    
+}
+
+.perfil{
+    float: left;
+    width: 6%;
+    float: left;
+    padding: 8px;
+    margin-top: auto;
+    
+    
+}
+
+/*.perfil a{
+    
+    margin-left: 15px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-size: 19px;
+
+    width: 2%;
+
+    display: inline-block;
+    border: red 1px solid;
+}*/
+
+.img_perfil{
+    
+    float: left;
+    margin-left: 10px;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 15px;
+
+    background-image: url(/spotfyClone/img/img_perfil\ .jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.menuPerfil{
+    
+    width: auto;
+    padding: 10px;
+    margin-top: 8px;
+    float: left;
+
+    font-size: 19px;
+}
+
+.dropdawn{
+    background-color: teal;
+    padding: 20px;
+
+    position: absolute;
+    width: 160px;
+    margin-top: 35px;
+    margin-left: -80px;
+
+    font-size: 19px;
+    border-radius: 7px;
+
+    display: none;
+    z-index: 1;
+}
+
+.dropdawn li a{
+    display: block;
+}
+
+.dropdawn:hover li{
+    display: inline-block;
+}
+
+
+.menuTopo a:hover {
+    color: #1ED760;
 }
 
 .bannerUm {
@@ -56,6 +148,10 @@ a{ text-decoration: none; color: white; }
     height: 635px;
     background-color: #e6c050;
 
+}
+
+.menuRespos{
+    display: none;
 }
 
 /* Fim barra menu superior */
@@ -83,6 +179,15 @@ a{ text-decoration: none; color: white; }
     .premium, .suporte, .baixar, .perfil {
         display: none;
     
+    }
+
+    .menuTopo{
+        display: none;
+    }
+
+    .menuRespos{
+        display: block;
+        color: white;
     }
     
 }
